@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1> Formulário </h1>
+    <form action="https://formspree.io/f/xwpepkrl" method="post">
+        <p>
+            <label for="inputName">Nome:</label>
+            <input id="inputName" placeholder="Digite seu nome" type="text" required value="" name="Name">
+        </p>
+        <p>
+            <label for="answer">Resposta:</label>
+            <textarea placeholder="Digite sua resposta" name="Answer" id="answer"></textarea>
+        </p>
+        <p>
+            <p>Escolha seus hobbies:</p>
+            <input type="checkbox" id="esporte" name="hobbies" value="esporte">
+            <label for="esporte">Esporte</label><br>
+            <input type="checkbox" id="musica" name="hobbies" value="musica">
+            <label for="musica">Música</label><br>
+            <input type="checkbox" id="leitura" name="hobbies" value="leitura">
+            <label for="leitura">Leitura</label>
+        </p>
+
+        <p>
+            <label for="selectEstados">Selecione seu estado:</label>
+            <select name="estados" id="selectEstados" value="PR">
+                <option value="RJ">Rio de Janeiro</option>
+                <option selected value="RS">Rio Grande do Sul</option>
+                <option value="SP">São Paulo</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+            </select>
+        </p>
+        
+        <button type="submit">Enviar dados</button>
+        </form>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        header{
+            background-color: white;
+            padding: 1em;
+            margin: 1em;
+            border-radius: 5px;
+            
+            
+        }
+        nav{
+            background-color: rgb(168, 168, 168);
+            padding: 3px;
+            width: auto;
+            
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            margin-right: 15px;
+            border: 2px solid red;
+        }
+        
+        #texto-escondido {
+            text-align: justify;
+            display: none;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        nav > #teste:hover{
+            display: block;
+        }
+
+        
+        
+        article {
+            background-color: white;
+            padding: 0.5em;
+            margin: 1em;
+            text-align: justify;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(26, 26, 26, 0.47)
+        }
+        
+        article > h2 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }   
+
+        article > aside{
+            background-color: gray;
+            padding: 0.2em;
+
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding: 1px;
+            text-align: center;
+        }
+        
+        footer > p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a id="teste" href="#">Link</a>
+                <p id="texto-escondido">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium aperiam rerum, vero labore perferendis tempora laboriosam magni qui minus aliquam perspiciatis in repellat. Architecto accusamus exercitationem laboriosam officia culpa!</p>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, perspiciatis non molestiae quidem eos excepturi accusamus magnam facilis. Perspiciatis possimus cum quis nemo hic, nulla maxime rem natus itaque fuga.
+                </p>
+                <aside>Artigo escrito por José de Silva</aside>
+            </article>
+            <article>
+                <h2>Notícia 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis incidunt explicabo amet modi, laboriosam ex, minus placeat, tenetur deserunt hic voluptates! Nesciunt quos dolor quis a molestiae tempore reprehenderit repudiandae!</p>
+                <aside>Por Fulano</aside>
+
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Yan</p>
+    </footer>
+</body>
+</html>
